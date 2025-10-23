@@ -24,11 +24,11 @@ msgstr ""
 "Language: uk\n"
 "Language-Team: \n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 msgid ""
 "\n"
@@ -164,15 +164,15 @@ msgid "!= (Is not equal)"
 msgstr "! = (Не рівний)"
 
 #, fuzzy, python-format
-msgid "%% calculation"
+msgid "% calculation"
 msgstr "%% обчислення"
 
 #, fuzzy, python-format
-msgid "%% of parent"
+msgid "% of parent"
 msgstr "%% батьківського"
 
 #, fuzzy, python-format
-msgid "%% of total"
+msgid "% of total"
 msgstr "%% від загального"
 
 #, python-format
@@ -629,7 +629,7 @@ msgstr "База даних з тим самим іменем вже існує.
 msgid "A date is required when using custom date shift"
 msgstr ""
 
-#, fuzzy
+#, fuzzy, python-brace-format
 msgid ""
 "A dictionary with column names and their data types if you need to change"
 " the defaults. Example: {\"user_id\":\"int\"}. Check Python's Pandas "
@@ -925,9 +925,6 @@ msgstr "Напишіть опис свого запиту"
 msgid "Add extra connection information."
 msgstr "Додайте додаткову інформацію про з'єднання."
 
-msgid "Add filter"
-msgstr "Додати фільтр"
-
 msgid ""
 "Add filter clauses to control the filter's source query,\n"
 "                    though only in the context of the autocomplete i.e., "
@@ -1174,14 +1171,18 @@ msgstr "Попередній запит повернув більше одног
 
 #, fuzzy, python-format
 msgid "Alert query returned more than one column. %(num_cols)s columns returned"
-msgstr "Попередній запит повернув більше одного стовпця. Повернуто %(num_cols)s стовпців"
+msgstr ""
+"Попередній запит повернув більше одного стовпця. Повернуто %(num_cols)s "
+"стовпців"
 
 msgid "Alert query returned more than one row."
 msgstr "Попередній запит повернув більше одного ряду."
 
 #, fuzzy, python-format
 msgid "Alert query returned more than one row. %(num_rows)s rows returned"
-msgstr "Попередній запит повернув більше одного ряду. Повернуто %(num_rows)s рядків"
+msgstr ""
+"Попередній запит повернув більше одного ряду. Повернуто %(num_rows)s "
+"рядків"
 
 msgid "Alert running"
 msgstr "Попередження"
@@ -1337,7 +1338,7 @@ msgstr ""
 msgid "An error has occurred"
 msgstr "Сталася помилка"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "An error has occurred while syncing virtual dataset columns"
 msgstr "Помилка сталася під час отримання наборів даних: %s"
 
@@ -2477,12 +2478,15 @@ msgstr "Діаграма [%s] збережена"
 msgid "Chart [%s] was added to dashboard [%s]"
 msgstr "Діаграма [%s] була додана до інформаційної панелі [%s]"
 
+#, python-brace-format
 msgid "Chart [{}] has been overwritten"
 msgstr "Діаграма [{}] була перезаписана"
 
+#, python-brace-format
 msgid "Chart [{}] has been saved"
 msgstr "Діаграма [{}] збережена"
 
+#, python-brace-format
 msgid "Chart [{}] was added to dashboard [{}]"
 msgstr "Діаграма [{}] була додана до інформаційної панелі [{}]"
 
@@ -3262,6 +3266,7 @@ msgstr "Не вдалося знайти об'єкт Viz"
 msgid "Could not load database driver"
 msgstr "Не вдалося завантажити драйвер бази даних"
 
+#, python-brace-format
 msgid "Could not load database driver: {}"
 msgstr "Не вдалося завантажити драйвер бази даних: {}"
 
@@ -3321,9 +3326,6 @@ msgstr ""
 
 msgid "Create a new chart"
 msgstr "Створіть нову діаграму"
-
-msgid "Create chart"
-msgstr "Створити діаграму"
 
 msgid "Create chart with dataset"
 msgstr "Створіть діаграму за допомогою набору даних"
@@ -3552,6 +3554,7 @@ msgstr "Дашборд"
 msgid "Dashboard [%s] just got created and chart [%s] was added to it"
 msgstr "Дашборд [%s] був щойно створений, а діаграма [%s] була додана до нього"
 
+#, python-brace-format
 msgid "Dashboard [{}] just got created and chart [{}] was added to it"
 msgstr "Дашборд [{}] був щойно створений, і діаграма [{}] була додана до нього"
 
@@ -3946,6 +3949,7 @@ msgstr "Виберіть схему"
 msgid "Default URL"
 msgstr "URL -адреса за замовчуванням"
 
+#, python-brace-format
 msgid ""
 "Default URL to redirect to when accessing from the dataset list page.\n"
 "            Accepts relative URLs such as <span style=„white-space: "
@@ -5240,6 +5244,7 @@ msgstr "Додаткові параметри"
 msgid "Extra data for JS"
 msgstr "Додаткові дані для JS"
 
+#, python-brace-format
 msgid ""
 "Extra data to specify table metadata. Currently supports metadata of the "
 "format: `{ \"certification\": { \"certified_by\": \"Data Platform Team\","
@@ -5320,7 +5325,7 @@ msgstr "Не вдалося зберегти перехресне фільтру
 msgid "Failed to start remote query on a worker."
 msgstr "Не вдалося запустити віддалений запит на працівника."
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Failed to stop query."
 msgstr "Не вдалося зупинити запит. %s"
 
@@ -5634,6 +5639,7 @@ msgstr ""
 msgid "Format SQL"
 msgstr "Формат D3"
 
+#, python-brace-format
 msgid ""
 "Format data labels. Use variables: {name}, {value}, {percent}. \\n "
 "represents a new line. ECharts compatibility:\n"
@@ -10027,9 +10033,6 @@ msgstr "Показати всі стовпці"
 msgid "Show axis line ticks"
 msgstr "Показати кліщі лінії осі"
 
-msgid "Show cell bars"
-msgstr "Показати стільникові смуги"
-
 msgid "Show chart description"
 msgstr "Показати опис діаграми"
 
@@ -10046,7 +10049,7 @@ msgstr "Показати точки даних як маркери кола на
 msgid "Show empty columns"
 msgstr "Показати порожні стовпці"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Show entries per page"
 msgstr "Показати показник"
 
@@ -10706,8 +10709,8 @@ msgid ""
 "Table [%(table)s] could not be found, please double check your database "
 "connection, schema, and table name"
 msgstr ""
-"Таблицю [%(table)s] не вдається знайти, будь ласка, перевірте "
-"підключення до бази даних, схеми та назву таблиці"
+"Таблицю [%(table)s] не вдається знайти, будь ласка, перевірте підключення"
+" до бази даних, схеми та назву таблиці"
 
 #, fuzzy
 msgid "Table actions"
@@ -11212,6 +11215,7 @@ msgstr ""
 "Metadata_params у додатковому полі налаштовані не правильно. Ключ %(key)s"
 " є недійсним."
 
+#, python-brace-format
 msgid ""
 "The metadata_params in Extra field is not configured correctly. The key "
 "%{key}s is invalid."
@@ -11285,15 +11289,13 @@ msgid ""
 "additional limits/filters, download to csv, or contact an admin to see "
 "more rows up to the %(limit)d limit."
 msgstr ""
-"Кількість відображених результатів обмежена %(rows)d. Будь ласка, "
-"додайте додаткові ліміти/фільтри, завантажте в CSV або зв’яжіться з "
+"Кількість відображених результатів обмежена %(rows)d. Будь ласка, додайте"
+" додаткові ліміти/фільтри, завантажте в CSV або зв’яжіться з "
 "адміністратором, щоб побачити більше рядків до обмеження %(limit)d."
 
 #, python-format
 msgid "The number of rows displayed is limited to %(rows)d by the dropdown."
-msgstr ""
-"Кількість відображених рядків обмежена %(rows)d шляхом спадного "
-"падіння."
+msgstr "Кількість відображених рядків обмежена %(rows)d шляхом спадного падіння."
 
 #, python-format
 msgid "The number of rows displayed is limited to %(rows)d by the limit dropdown."
@@ -11308,8 +11310,8 @@ msgid ""
 "The number of rows displayed is limited to %(rows)d by the query and "
 "limit dropdown."
 msgstr ""
-"Кількість відображених рядків обмежена %(rows)d шляхом запиту та "
-"спадного падіння."
+"Кількість відображених рядків обмежена %(rows)d шляхом запиту та спадного"
+" падіння."
 
 msgid "The number of seconds before expiring the cache"
 msgstr "Кількість секунд до закінчення кешу"
@@ -11793,7 +11795,7 @@ msgstr "Сталася помилка, що завантажує схеми"
 msgid "There was an error loading the tables"
 msgstr "Сталася помилка, що завантажує таблиці"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "There was an error retrieving dashboard tabs."
 msgstr "Вибачте, була помилка збереження цієї інформаційної панелі: %s"
 
@@ -12434,7 +12436,7 @@ msgstr "Всього (%(aggfunc)s)"
 msgid "Total (%(aggregatorName)s)"
 msgstr "Всього (%(aggregatorName)s)"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Total (Sum)"
 msgstr "Всього: %s"
 
@@ -13974,6 +13976,7 @@ msgstr ""
 "повністю скасувати наступні дії. Ви можете зберегти свій поточний стан "
 "для скидання історії."
 
+#, python-brace-format
 msgid "You may have an error in your SQL statement. {message}"
 msgstr ""
 
@@ -14204,6 +14207,7 @@ msgstr "основа"
 msgid "below (example:"
 msgstr "нижче (приклад:"
 
+#, python-brace-format
 msgid "between {down} and {up} {name}"
 msgstr "між {down} і {up} {name}"
 
@@ -14532,17 +14536,17 @@ msgid ""
 " Lab tabs using this database open. Are you sure you want to continue? "
 "Deleting the database will break those objects."
 msgstr ""
-"пов'язана з діаграмами %s, які показані на %s дашбордах і користувачі мають %s "
-"вкладки SQL Lab, що використовують цю базу даних. Ви впевнені, що хочете "
-"продовжувати? Видалення бази даних порушить ці об'єкти."
+"пов'язана з діаграмами %s, які показані на %s дашбордах і користувачі "
+"мають %s вкладки SQL Lab, що використовують цю базу даних. Ви впевнені, "
+"що хочете продовжувати? Видалення бази даних порушить ці об'єкти."
 
 #, fuzzy, python-format
 msgid ""
 "is linked to %s charts that appear on %s dashboards. Are you sure you "
 "want to continue? Deleting the dataset will break those objects."
 msgstr ""
-"пов'язаний з діаграмами %s, які з’являються на дашбордах %s. Ви впевнені, "
-"що хочете продовжувати? Видалення набору даних порушить ці об'єкти."
+"пов'язаний з діаграмами %s, які з’являються на дашбордах %s. Ви впевнені,"
+" що хочете продовжувати? Видалення набору даних порушить ці об'єкти."
 
 msgid "is not"
 msgstr "не є"
@@ -14562,6 +14566,7 @@ msgstr "останній розділ:"
 msgid "left"
 msgstr "лівий"
 
+#, python-brace-format
 msgid "less than {min} {name}"
 msgstr "менше {min} {name}"
 
@@ -14609,6 +14614,7 @@ msgstr "монотонний"
 msgid "month"
 msgstr "місяць"
 
+#, python-brace-format
 msgid "more than {max} {name}"
 msgstr "більше {max} {name}"
 
@@ -14828,7 +14834,7 @@ msgstr "іконка невідомого типу"
 msgid "unset"
 msgstr "Червень"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "updated"
 msgstr "%s оновлено"
 
@@ -14896,3 +14902,4 @@ msgstr "масштаб"
 
 msgid "© Layer attribution"
 msgstr ""
+

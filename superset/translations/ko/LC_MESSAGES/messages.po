@@ -22,11 +22,11 @@ msgstr ""
 "Last-Translator: \n"
 "Language: ko\n"
 "Language-Team: ko <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 msgid ""
 "\n"
@@ -602,6 +602,7 @@ msgstr "같은 이름의 데이터베이스가 이미 존재합니다"
 msgid "A date is required when using custom date shift"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "A dictionary with column names and their data types if you need to change"
 " the defaults. Example: {\"user_id\":\"int\"}. Check Python's Pandas "
@@ -882,9 +883,6 @@ msgstr ""
 #, fuzzy
 msgid "Add extra connection information."
 msgstr "주석"
-
-msgid "Add filter"
-msgstr "테이블 추가"
 
 msgid ""
 "Add filter clauses to control the filter's source query,\n"
@@ -1271,7 +1269,7 @@ msgstr ""
 msgid "An error has occurred"
 msgstr ""
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "An error has occurred while syncing virtual dataset columns"
 msgstr "데이터 베이스 목록을 가져오는 도중 에러가 발생하였습니다."
 
@@ -2397,12 +2395,15 @@ msgstr "주석 레이어"
 msgid "Chart [%s] was added to dashboard [%s]"
 msgstr ""
 
+#, python-brace-format
 msgid "Chart [{}] has been overwritten"
 msgstr ""
 
+#, python-brace-format
 msgid "Chart [{}] has been saved"
 msgstr ""
 
+#, python-brace-format
 msgid "Chart [{}] was added to dashboard [{}]"
 msgstr ""
 
@@ -3169,6 +3170,7 @@ msgstr ""
 msgid "Could not load database driver"
 msgstr "데이터베이스 드라이버를 로드할 수 없습니다"
 
+#, python-brace-format
 msgid "Could not load database driver: {}"
 msgstr ""
 
@@ -3231,10 +3233,6 @@ msgstr ""
 
 msgid "Create a new chart"
 msgstr "새 차트 생성"
-
-#, fuzzy
-msgid "Create chart"
-msgstr "차트 보기"
 
 msgid "Create chart with dataset"
 msgstr ""
@@ -3468,6 +3466,7 @@ msgstr "대시보드"
 msgid "Dashboard [%s] just got created and chart [%s] was added to it"
 msgstr ""
 
+#, python-brace-format
 msgid "Dashboard [{}] just got created and chart [{}] was added to it"
 msgstr ""
 
@@ -3864,6 +3863,7 @@ msgstr "테이블 선택"
 msgid "Default URL"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "Default URL to redirect to when accessing from the dataset list page.\n"
 "            Accepts relative URLs such as <span style=„white-space: "
@@ -5093,6 +5093,7 @@ msgstr ""
 msgid "Extra data for JS"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "Extra data to specify table metadata. Currently supports metadata of the "
 "format: `{ \"certification\": { \"certified_by\": \"Data Platform Team\","
@@ -5463,6 +5464,7 @@ msgstr ""
 msgid "Format SQL"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "Format data labels. Use variables: {name}, {value}, {percent}. \\n "
 "represents a new line. ECharts compatibility:\n"
@@ -9837,9 +9839,6 @@ msgstr "컬럼 보기"
 msgid "Show axis line ticks"
 msgstr ""
 
-msgid "Show cell bars"
-msgstr ""
-
 #, fuzzy
 msgid "Show chart description"
 msgstr "설명"
@@ -9859,7 +9858,7 @@ msgstr ""
 msgid "Show empty columns"
 msgstr "컬럼 수정"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Show entries per page"
 msgstr "메트릭 보기"
 
@@ -10975,6 +10974,7 @@ msgid ""
 "%(key)s is invalid."
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "The metadata_params in Extra field is not configured correctly. The key "
 "%{key}s is invalid."
@@ -13437,6 +13437,7 @@ msgid ""
 "the history."
 msgstr ""
 
+#, python-brace-format
 msgid "You may have an error in your SQL statement. {message}"
 msgstr ""
 
@@ -13650,6 +13651,7 @@ msgstr ""
 msgid "below (example:"
 msgstr ""
 
+#, python-brace-format
 msgid "between {down} and {up} {name}"
 msgstr ""
 
@@ -14022,6 +14024,7 @@ msgstr ""
 msgid "left"
 msgstr "삭제"
 
+#, python-brace-format
 msgid "less than {min} {name}"
 msgstr ""
 
@@ -14072,6 +14075,7 @@ msgstr "월"
 msgid "month"
 msgstr "월"
 
+#, python-brace-format
 msgid "more than {max} {name}"
 msgstr ""
 
@@ -14364,3 +14368,4 @@ msgstr ""
 
 msgid "© Layer attribution"
 msgstr ""
+

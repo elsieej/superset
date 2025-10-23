@@ -30,11 +30,11 @@ msgstr ""
 "Language: ar\n"
 "Language-Team: ar <LL@li.org>\n"
 "Plural-Forms: nplurals=6; plural=(n==0) ? 0 : (n==1) ? 1 : (n==2) ? 2 : "
-"(n%100>=3 && n%100<=10) ? 3 : (n%100>=11 && n%100<=99) ? 4 : 5\n"
+"(n%100>=3 && n%100<=10) ? 3 : (n%100>=11 && n%100<=99) ? 4 : 5;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 msgid ""
 "\n"
@@ -625,7 +625,7 @@ msgstr "قاعدة بيانات بنفس الاسم موجودة بالفعل."
 msgid "A date is required when using custom date shift"
 msgstr ""
 
-#, fuzzy
+#, fuzzy, python-brace-format
 msgid ""
 "A dictionary with column names and their data types if you need to change"
 " the defaults. Example: {\"user_id\":\"int\"}. Check Python's Pandas "
@@ -909,9 +909,6 @@ msgstr "إضافة وصف لعلامتك"
 
 msgid "Add extra connection information."
 msgstr "أضف معلومات اتصال إضافية."
-
-msgid "Add filter"
-msgstr "إضافة فلتر"
 
 msgid ""
 "Add filter clauses to control the filter's source query,\n"
@@ -1322,7 +1319,7 @@ msgstr "يجب تحديد المحرك عند تمرير المعلمات الف
 msgid "An error has occurred"
 msgstr "حدث خطأ"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "An error has occurred while syncing virtual dataset columns"
 msgstr "حدث خطأ أثناء جلب مجموعات البيانات: %s"
 
@@ -2441,12 +2438,15 @@ msgstr "تم حفظ المخطط [%s]"
 msgid "Chart [%s] was added to dashboard [%s]"
 msgstr "تمت إضافة المخطط [%s] إلى لوحة المعلومات [%s]"
 
+#, python-brace-format
 msgid "Chart [{}] has been overwritten"
 msgstr "تمت الكتابة فوق المخطط [{}]"
 
+#, python-brace-format
 msgid "Chart [{}] has been saved"
 msgstr "تم حفظ الرسم البياني [{}]"
 
+#, python-brace-format
 msgid "Chart [{}] was added to dashboard [{}]"
 msgstr "الرسم البياني [{}] was added to dashboard [{}]"
 
@@ -3210,6 +3210,7 @@ msgstr "تعذر العثور على كائن بمعنى"
 msgid "Could not load database driver"
 msgstr "تعذر تحميل برنامج تشغيل قاعدة البيانات"
 
+#, python-brace-format
 msgid "Could not load database driver: {}"
 msgstr "تعذر تحميل برنامج تشغيل قاعدة البيانات: {}"
 
@@ -3268,9 +3269,6 @@ msgstr ""
 
 msgid "Create a new chart"
 msgstr "إنشاء مخطط جديد"
-
-msgid "Create chart"
-msgstr "إنشاء مخطط"
 
 msgid "Create chart with dataset"
 msgstr "إنشاء مخطط مع مجموعة بيانات"
@@ -3500,6 +3498,7 @@ msgstr "لوحه القياده"
 msgid "Dashboard [%s] just got created and chart [%s] was added to it"
 msgstr "لوحة القيادة [%s] تم إنشاؤها للتو وتمت إضافة الرسم البياني [%s] إليها"
 
+#, python-brace-format
 msgid "Dashboard [{}] just got created and chart [{}] was added to it"
 msgstr "تمت إضافة لوحة المعلومات [{}] إليها"
 
@@ -3889,6 +3888,7 @@ msgstr "إفتراضي"
 msgid "Default URL"
 msgstr "URL الافتراضي"
 
+#, python-brace-format
 msgid ""
 "Default URL to redirect to when accessing from the dataset list page.\n"
 "            Accepts relative URLs such as <span style=„white-space: "
@@ -5202,6 +5202,7 @@ msgstr "المعلمات الإضافية"
 msgid "Extra data for JS"
 msgstr "بيانات إضافية لـ JS"
 
+#, python-brace-format
 msgid ""
 "Extra data to specify table metadata. Currently supports metadata of the "
 "format: `{ \"certification\": { \"certified_by\": \"Data Platform Team\","
@@ -5282,7 +5283,7 @@ msgstr "فشلت عملية حفظ تحديد نطاق عوامل التصفية
 msgid "Failed to start remote query on a worker."
 msgstr "فشل بدء الاستعلام عن بعد على عامل."
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Failed to stop query."
 msgstr "فشل في إيقاف الاستعلام. %s"
 
@@ -5593,6 +5594,7 @@ msgstr ""
 msgid "Format SQL"
 msgstr "صيغة SQL"
 
+#, python-brace-format
 msgid ""
 "Format data labels. Use variables: {name}, {value}, {percent}. \\n "
 "represents a new line. ECharts compatibility:\n"
@@ -9920,9 +9922,6 @@ msgstr "عرض جميع الأعمدة"
 msgid "Show axis line ticks"
 msgstr "عرض علامات خط المحور"
 
-msgid "Show cell bars"
-msgstr "عرض أشرطة الخلايا"
-
 msgid "Show chart description"
 msgstr "عرض وصف المخطط"
 
@@ -9938,7 +9937,7 @@ msgstr "عرض نقاط البيانات كعلامات دائرة على الخ
 msgid "Show empty columns"
 msgstr "عرض الأعمدة الفارغة"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Show entries per page"
 msgstr "إدخالات"
 
@@ -11075,6 +11074,7 @@ msgstr ""
 "لم يتم تكوين metadata_params في الحقل الإضافي بشكل صحيح. المفتاح %(key)s "
 "غير صالح."
 
+#, python-brace-format
 msgid ""
 "The metadata_params in Extra field is not configured correctly. The key "
 "%{key}s is invalid."
@@ -12270,7 +12270,7 @@ msgstr "المجموع (%(aggfunc)s)"
 msgid "Total (%(aggregatorName)s)"
 msgstr "المجموع (%(aggregatorName)s)"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Total (Sum)"
 msgstr "الإجمالي: %s"
 
@@ -13749,6 +13749,7 @@ msgstr ""
 "لقد استخدمت جميع فتحات %(historyLength)s التراجع ولن تتمكن من التراجع "
 "تمامًا عن الإجراءات اللاحقة. يمكنك حفظ حالتك الحالية لإعادة تعيين السجل."
 
+#, python-brace-format
 msgid "You may have an error in your SQL statement. {message}"
 msgstr ""
 
@@ -13971,6 +13972,7 @@ msgstr "أساس"
 msgid "below (example:"
 msgstr "أدناه (مثال:"
 
+#, python-brace-format
 msgid "between {down} and {up} {name}"
 msgstr "بين {down} و {up} {name}"
 
@@ -14328,6 +14330,7 @@ msgstr "أحدث قسم:"
 msgid "left"
 msgstr "اليسار"
 
+#, python-brace-format
 msgid "less than {min} {name}"
 msgstr "أقل من {min} {name}"
 
@@ -14374,6 +14377,7 @@ msgstr "رتيبة"
 msgid "month"
 msgstr "الشهر"
 
+#, python-brace-format
 msgid "more than {max} {name}"
 msgstr "أكثر من {max} {name}"
 
@@ -14590,7 +14594,7 @@ msgstr "رمز نوع غير معروف"
 msgid "unset"
 msgstr "حزيران (يونيو)"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "updated"
 msgstr "%s محدث"
 
@@ -14658,3 +14662,4 @@ msgstr ""
 
 msgid "© Layer attribution"
 msgstr ""
+

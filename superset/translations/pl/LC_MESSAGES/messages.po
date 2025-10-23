@@ -22,11 +22,11 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
 "Language-Team: fr <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 msgid ""
 "\n"
@@ -664,7 +664,7 @@ msgstr "Baza danych o tej samej nazwie już istnieje."
 msgid "A date is required when using custom date shift"
 msgstr ""
 
-#, fuzzy
+#, fuzzy, python-brace-format
 msgid ""
 "A dictionary with column names and their data types if you need to change"
 " the defaults. Example: {\"user_id\":\"int\"}. Check Python's Pandas "
@@ -973,9 +973,6 @@ msgstr "Dodaj opis swojego tagu"
 #, fuzzy
 msgid "Add extra connection information."
 msgstr "Dodaj dodatkowe informacje o połączeniu."
-
-msgid "Add filter"
-msgstr "Dodaj filtr"
 
 msgid ""
 "Add filter clauses to control the filter's source query,\n"
@@ -2547,12 +2544,15 @@ msgstr "Wykres [%s] został zapisany"
 msgid "Chart [%s] was added to dashboard [%s]"
 msgstr "Wykres [%s] został dodany do pulpitu [%s]"
 
+#, python-brace-format
 msgid "Chart [{}] has been overwritten"
 msgstr "Wykres [{}] został nadpisany"
 
+#, python-brace-format
 msgid "Chart [{}] has been saved"
 msgstr "Wykres [{}] został zapisany"
 
+#, python-brace-format
 msgid "Chart [{}] was added to dashboard [{}]"
 msgstr "Wykres [{}] został dodany do pulpitu [{}]"
 
@@ -3366,6 +3366,7 @@ msgstr "Nie udało się znaleźć obiektu wizualizacji"
 msgid "Could not load database driver"
 msgstr "Nie udało się załadować sterownika bazy danych"
 
+#, python-brace-format
 msgid "Could not load database driver: {}"
 msgstr "Nie udało się załadować sterownika bazy danych: {}"
 
@@ -3431,10 +3432,6 @@ msgstr ""
 
 msgid "Create a new chart"
 msgstr "Utwórz nowy wykres"
-
-#, fuzzy
-msgid "Create chart"
-msgstr "Utwórz wykres"
 
 msgid "Create chart with dataset"
 msgstr "Utwórz wykres z zestawem danych"
@@ -3681,6 +3678,7 @@ msgstr ""
 "Pulpit nawigacyjny [%s] został właśnie utworzony, a wykres [%s] został do"
 " niego dodany."
 
+#, python-brace-format
 msgid "Dashboard [{}] just got created and chart [{}] was added to it"
 msgstr ""
 "Pulpit nawigacyjny [{}] został właśnie utworzony, a wykres [{}] został do"
@@ -4098,6 +4096,7 @@ msgstr "Domyślny schemat"
 msgid "Default URL"
 msgstr "Domyślny URL"
 
+#, python-brace-format
 msgid ""
 "Default URL to redirect to when accessing from the dataset list page.\n"
 "            Accepts relative URLs such as <span style=„white-space: "
@@ -5458,6 +5457,7 @@ msgstr "Dodatkowe parametry"
 msgid "Extra data for JS"
 msgstr "Dodatkowe dane dla JS"
 
+#, python-brace-format
 msgid ""
 "Extra data to specify table metadata. Currently supports metadata of the "
 "format: `{ \"certification\": { \"certified_by\": \"Data Platform Team\","
@@ -5544,7 +5544,7 @@ msgstr "Nie udało się zapisać zakresu filtrów krzyżowych"
 msgid "Failed to start remote query on a worker."
 msgstr "Nie udało się rozpocząć zapytania zdalnego na pracowniku."
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Failed to stop query."
 msgstr "Nie udało się zatrzymać zapytania. %s"
 
@@ -5875,6 +5875,7 @@ msgstr ""
 msgid "Format SQL"
 msgstr "Format SQL"
 
+#, python-brace-format
 msgid ""
 "Format data labels. Use variables: {name}, {value}, {percent}. \\n "
 "represents a new line. ECharts compatibility:\n"
@@ -10459,9 +10460,6 @@ msgstr "Pokaż wszystkie kolumny"
 msgid "Show axis line ticks"
 msgstr "Pokaż znaczniki linii osi"
 
-msgid "Show cell bars"
-msgstr "Pokaż paski komórek"
-
 #, fuzzy
 msgid "Show chart description"
 msgstr "Pokaż opis wykresu"
@@ -10481,7 +10479,7 @@ msgstr "Pokaż punkty danych jako okrągłe znaczniki na liniach"
 msgid "Show empty columns"
 msgstr "Pokaż puste kolumny"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Show entries per page"
 msgstr "Pokaż wpisy %s"
 
@@ -11727,6 +11725,7 @@ msgstr ""
 "Parametr metadata_params w polu dodatkowym jest niepoprawnie "
 "skonfigurowany. Klucz %(key)s jest nieprawidłowy."
 
+#, python-brace-format
 msgid ""
 "The metadata_params in Extra field is not configured correctly. The key "
 "%{key}s is invalid."
@@ -12325,7 +12324,7 @@ msgstr "Wystąpił błąd podczas ładowania schematów."
 msgid "There was an error loading the tables"
 msgstr "Wystąpił błąd podczas ładowania tabel."
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "There was an error retrieving dashboard tabs."
 msgstr "Przepraszamy, wystąpił błąd podczas zapisywania tego dashboardu: %s"
 
@@ -13021,7 +13020,7 @@ msgstr "Razem (%(aggfunc)s)"
 msgid "Total (%(aggregatorName)s)"
 msgstr "Razem (%(aggregatorName)s)"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Total (Sum)"
 msgstr "Razem: %s"
 
@@ -14606,6 +14605,7 @@ msgstr ""
 "będziesz mógł cofnąć kolejnych działań. Możesz zapisać swój obecny stan, "
 "aby zresetować historię."
 
+#, python-brace-format
 msgid "You may have an error in your SQL statement. {message}"
 msgstr "Możliwe, że masz błąd w zapytaniu SQL. {message}"
 
@@ -14845,6 +14845,7 @@ msgstr "podstawa"
 msgid "below (example:"
 msgstr "poniżej (przykład:"
 
+#, python-brace-format
 msgid "between {down} and {up} {name}"
 msgstr "między {down} a {up} {name}"
 
@@ -15239,6 +15240,7 @@ msgstr "najnowsza partycja:"
 msgid "left"
 msgstr "lewo"
 
+#, python-brace-format
 msgid "less than {min} {name}"
 msgstr "mniej niż {min} {name}"
 
@@ -15292,6 +15294,7 @@ msgstr "jednostajny"
 msgid "month"
 msgstr "miesiąc"
 
+#, python-brace-format
 msgid "more than {max} {name}"
 msgstr "więcej niż {max} {name}"
 
@@ -15539,7 +15542,7 @@ msgstr "ikona nieznanego typu"
 msgid "unset"
 msgstr "Czerwiec"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "updated"
 msgstr "Ostatnia aktualizacja %s"
 
@@ -15616,3 +15619,4 @@ msgstr "obszar powiększenia"
 
 msgid "© Layer attribution"
 msgstr ""
+

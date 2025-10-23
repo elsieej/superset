@@ -26,11 +26,11 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: tr\n"
 "Language-Team: tr <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 msgid ""
 "\n"
@@ -583,6 +583,7 @@ msgstr ""
 msgid "A date is required when using custom date shift"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "A dictionary with column names and their data types if you need to change"
 " the defaults. Example: {\"user_id\":\"int\"}. Check Python's Pandas "
@@ -846,9 +847,6 @@ msgstr ""
 
 msgid "Add extra connection information."
 msgstr ""
-
-msgid "Add filter"
-msgstr "Filtre ekle"
 
 msgid ""
 "Add filter clauses to control the filter's source query,\n"
@@ -1612,7 +1610,7 @@ msgstr ""
 msgid "Are you sure you want to delete the selected queries?"
 msgstr ""
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Are you sure you want to delete the selected roles?"
 msgstr "%s’i silmek istiyor musunuz?"
 
@@ -1625,7 +1623,7 @@ msgstr ""
 msgid "Are you sure you want to delete the selected templates?"
 msgstr ""
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Are you sure you want to delete the selected users?"
 msgstr "%s’i silmek istiyor musunuz?"
 
@@ -2287,12 +2285,15 @@ msgstr "[%s] grafiği kaydedildi"
 msgid "Chart [%s] was added to dashboard [%s]"
 msgstr "[%s] grafiği [%s] dashboardına eklendi"
 
+#, python-brace-format
 msgid "Chart [{}] has been overwritten"
 msgstr "[{}] grafiğinin üzerine yazıldı"
 
+#, python-brace-format
 msgid "Chart [{}] has been saved"
 msgstr "[{}] grafiği kaydedildi"
 
+#, python-brace-format
 msgid "Chart [{}] was added to dashboard [{}]"
 msgstr "[{}] grafiği [{}] dashboardına eklendi"
 
@@ -3018,6 +3019,7 @@ msgstr ""
 msgid "Could not load database driver"
 msgstr "Veritabanı sürücüsü yüklenemedi"
 
+#, python-brace-format
 msgid "Could not load database driver: {}"
 msgstr "Veritabanı sürücüsü yüklenemedi: {}"
 
@@ -3074,9 +3076,6 @@ msgstr ""
 
 msgid "Create a new chart"
 msgstr "Yeni grafik oluştur"
-
-msgid "Create chart"
-msgstr "Grafik oluştur"
 
 msgid "Create chart with dataset"
 msgstr "Veriseti ile grafik oluştur"
@@ -3298,6 +3297,7 @@ msgstr "Dashboard"
 msgid "Dashboard [%s] just got created and chart [%s] was added to it"
 msgstr ""
 
+#, python-brace-format
 msgid "Dashboard [{}] just got created and chart [{}] was added to it"
 msgstr ""
 
@@ -3666,6 +3666,7 @@ msgstr "Şema seç"
 msgid "Default URL"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "Default URL to redirect to when accessing from the dataset list page.\n"
 "            Accepts relative URLs such as <span style=„white-space: "
@@ -4852,6 +4853,7 @@ msgstr ""
 msgid "Extra data for JS"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "Extra data to specify table metadata. Currently supports metadata of the "
 "format: `{ \"certification\": { \"certified_by\": \"Data Platform Team\","
@@ -5208,6 +5210,7 @@ msgstr ""
 msgid "Format SQL"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "Format data labels. Use variables: {name}, {value}, {percent}. \\n "
 "represents a new line. ECharts compatibility:\n"
@@ -5505,7 +5508,7 @@ msgid ""
 "it sorts the results ascending."
 msgstr ""
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "If table already exists"
 msgstr "Veriseti %(name)s zaten var"
 
@@ -9340,9 +9343,6 @@ msgstr ""
 msgid "Show axis line ticks"
 msgstr ""
 
-msgid "Show cell bars"
-msgstr ""
-
 msgid "Show chart description"
 msgstr ""
 
@@ -9417,7 +9417,7 @@ msgstr ""
 msgid "Show the value on top of the bar"
 msgstr ""
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Show total"
 msgstr "Toplamı göster"
 
@@ -10413,6 +10413,7 @@ msgid ""
 "%(key)s is invalid."
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "The metadata_params in Extra field is not configured correctly. The key "
 "%{key}s is invalid."
@@ -12820,6 +12821,7 @@ msgid ""
 "the history."
 msgstr ""
 
+#, python-brace-format
 msgid "You may have an error in your SQL statement. {message}"
 msgstr ""
 
@@ -13028,6 +13030,7 @@ msgstr ""
 msgid "below (example:"
 msgstr ""
 
+#, python-brace-format
 msgid "between {down} and {up} {name}"
 msgstr ""
 
@@ -13374,6 +13377,7 @@ msgstr ""
 msgid "left"
 msgstr ""
 
+#, python-brace-format
 msgid "less than {min} {name}"
 msgstr ""
 
@@ -13418,6 +13422,7 @@ msgstr ""
 msgid "month"
 msgstr "ay"
 
+#, python-brace-format
 msgid "more than {max} {name}"
 msgstr ""
 
@@ -13694,3 +13699,4 @@ msgstr ""
 
 msgid "© Layer attribution"
 msgstr ""
+

@@ -18,11 +18,11 @@ msgstr ""
 "Last-Translator: \n"
 "Language: nl\n"
 "Language-Team: Dutch\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 msgid ""
 "\n"
@@ -626,7 +626,7 @@ msgstr "Een database met dezelfde naam bestaat al."
 msgid "A date is required when using custom date shift"
 msgstr ""
 
-#, fuzzy
+#, fuzzy, python-brace-format
 msgid ""
 "A dictionary with column names and their data types if you need to change"
 " the defaults. Example: {\"user_id\":\"int\"}. Check Python's Pandas "
@@ -917,9 +917,6 @@ msgstr "Voeg een beschrijving van je tag toe"
 
 msgid "Add extra connection information."
 msgstr "Extra verbindingsinformatie toevoegen."
-
-msgid "Add filter"
-msgstr "Filter toevoegen"
 
 msgid ""
 "Add filter clauses to control the filter's source query,\n"
@@ -1332,7 +1329,7 @@ msgstr ""
 msgid "An error has occurred"
 msgstr "Er is een fout opgetreden"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "An error has occurred while syncing virtual dataset columns"
 msgstr "Er is een fout opgetreden bij het ophalen van datasets: %s"
 
@@ -2494,12 +2491,15 @@ msgstr "Grafiek [%s] is opgeslagen"
 msgid "Chart [%s] was added to dashboard [%s]"
 msgstr "Grafiek [%s] is toegevoegd aan dashboard [%s]"
 
+#, python-brace-format
 msgid "Chart [{}] has been overwritten"
 msgstr "Grafiek [{}] is overschreven"
 
+#, python-brace-format
 msgid "Chart [{}] has been saved"
 msgstr "Grafiek [{}] is opgeslagen"
 
+#, python-brace-format
 msgid "Chart [{}] was added to dashboard [{}]"
 msgstr "Grafiek [{}] werd toegevoegd aan dashboard [{}]"
 
@@ -3275,6 +3275,7 @@ msgstr "Kon het viz object niet vinden"
 msgid "Could not load database driver"
 msgstr "Kon het database driver niet laden"
 
+#, python-brace-format
 msgid "Could not load database driver: {}"
 msgstr "Kon het database driver niet laden: {}"
 
@@ -3334,9 +3335,6 @@ msgstr ""
 
 msgid "Create a new chart"
 msgstr "Maak een nieuwe grafiek"
-
-msgid "Create chart"
-msgstr "Grafiek aanmaken"
 
 msgid "Create chart with dataset"
 msgstr "Maak een grafiek met dataset"
@@ -3564,6 +3562,7 @@ msgstr "Dashboard"
 msgid "Dashboard [%s] just got created and chart [%s] was added to it"
 msgstr "Dashboard [%s] is zojuist aangemaakt en grafiek [%s] is eraan toegevoegd"
 
+#, python-brace-format
 msgid "Dashboard [{}] just got created and chart [{}] was added to it"
 msgstr "Dashboard [{}] is zojuist aangemaakt en grafiek [{}] is eraan toegevoegd"
 
@@ -3954,6 +3953,7 @@ msgstr "Selecteer schema"
 msgid "Default URL"
 msgstr "Standaard URL"
 
+#, python-brace-format
 msgid ""
 "Default URL to redirect to when accessing from the dataset list page.\n"
 "            Accepts relative URLs such as <span style=„white-space: "
@@ -5246,6 +5246,7 @@ msgstr "Extra Parameters"
 msgid "Extra data for JS"
 msgstr "Extra data voor JS"
 
+#, python-brace-format
 msgid ""
 "Extra data to specify table metadata. Currently supports metadata of the "
 "format: `{ \"certification\": { \"certified_by\": \"Data Platform Team\","
@@ -5327,7 +5328,7 @@ msgstr "Opslaan van cross-filter scope mislukt"
 msgid "Failed to start remote query on a worker."
 msgstr "Het starten van externe query op een werker is mislukt."
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Failed to stop query."
 msgstr "Opschorten van query mislukt. %s"
 
@@ -5641,6 +5642,7 @@ msgstr ""
 msgid "Format SQL"
 msgstr "Formatteer SQL"
 
+#, python-brace-format
 msgid ""
 "Format data labels. Use variables: {name}, {value}, {percent}. \\n "
 "represents a new line. ECharts compatibility:\n"
@@ -10016,9 +10018,6 @@ msgstr "Toon alle kolommen"
 msgid "Show axis line ticks"
 msgstr "Toon as lijntikken"
 
-msgid "Show cell bars"
-msgstr "Toon cel balken"
-
 msgid "Show chart description"
 msgstr "Toon grafiekbeschrijving"
 
@@ -10034,7 +10033,7 @@ msgstr "Toon gegevenspunten als cirkelmarkeringen op de lijnen"
 msgid "Show empty columns"
 msgstr "Toon lege kolommen"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Show entries per page"
 msgstr "Toon metriek"
 
@@ -11196,6 +11195,7 @@ msgstr ""
 "De metadata_params in Extra veld is niet correct geconfigureerd. De "
 "sleutel %(key)s is ongeldig."
 
+#, python-brace-format
 msgid ""
 "The metadata_params in Extra field is not configured correctly. The key "
 "%{key}s is invalid."
@@ -11786,7 +11786,7 @@ msgstr "Er is een fout opgetreden bij het laden van de schema's"
 msgid "There was an error loading the tables"
 msgstr "Er is een fout opgetreden bij het laden van de tabellen"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "There was an error retrieving dashboard tabs."
 msgstr "Sorry, er is een fout opgetreden bij het opslaan van dit dashboard: %s"
 
@@ -12445,7 +12445,7 @@ msgstr "Totaal (%(aggfunc)s)"
 msgid "Total (%(aggregatorName)s)"
 msgstr "Totaal (%(aggregatorName)s)"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Total (Sum)"
 msgstr "Totaal: %s"
 
@@ -13996,6 +13996,7 @@ msgstr ""
 " volgende acties niet ongedaan maken. Je kunt je huidige status opslaan "
 "om de geschiedenis te resetten."
 
+#, python-brace-format
 msgid "You may have an error in your SQL statement. {message}"
 msgstr ""
 
@@ -14226,6 +14227,7 @@ msgstr "basis"
 msgid "below (example:"
 msgstr "hieronder (voorbeeld:"
 
+#, python-brace-format
 msgid "between {down} and {up} {name}"
 msgstr "tussen {down} en {up} {name}"
 
@@ -14584,6 +14586,7 @@ msgstr "laatste partitie:"
 msgid "left"
 msgstr "links"
 
+#, python-brace-format
 msgid "less than {min} {name}"
 msgstr "minder dan {min} {name}"
 
@@ -14630,6 +14633,7 @@ msgstr "monotoon"
 msgid "month"
 msgstr "maand"
 
+#, python-brace-format
 msgid "more than {max} {name}"
 msgstr "meer dan {max} {name}"
 
@@ -14847,7 +14851,7 @@ msgstr "onbekend type icoon"
 msgid "unset"
 msgstr "Juni"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "updated"
 msgstr "laatst bijgewerkt %s"
 
@@ -14915,3 +14919,4 @@ msgstr "zoom gebied"
 
 msgid "© Layer attribution"
 msgstr ""
+

@@ -23,11 +23,11 @@ msgstr ""
 "Last-Translator: Holger Bruch <holger.bruch@wattbewerb.de>\n"
 "Language: de\n"
 "Language-Team: de <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 msgid ""
 "\n"
@@ -661,6 +661,7 @@ msgstr "Eine Datenbank mit dem gleichen Namen existiert bereits."
 msgid "A date is required when using custom date shift"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "A dictionary with column names and their data types if you need to change"
 " the defaults. Example: {\"user_id\":\"int\"}. Check Python's Pandas "
@@ -954,9 +955,6 @@ msgstr "Beschreibung des Schlagwortes hinzufügen"
 
 msgid "Add extra connection information."
 msgstr "Zusätzliche Verbindungsinformationen hinzufügen"
-
-msgid "Add filter"
-msgstr "Filter hinzufügen"
 
 msgid ""
 "Add filter clauses to control the filter's source query,\n"
@@ -1381,7 +1379,7 @@ msgstr ""
 msgid "An error has occurred"
 msgstr "Ein Fehler ist aufgetreten"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "An error has occurred while syncing virtual dataset columns"
 msgstr "Beim Abrufen von Datensätzen ist ein Fehler aufgetreten: %s"
 
@@ -2538,12 +2536,15 @@ msgstr "Diagramm [%s] wurde gespeichert"
 msgid "Chart [%s] was added to dashboard [%s]"
 msgstr "Diagramm [%s] wurde dem Dashboard hinzugefügt [%s]"
 
+#, python-brace-format
 msgid "Chart [{}] has been overwritten"
 msgstr "Diagramm [{}] wurde überschrieben"
 
+#, python-brace-format
 msgid "Chart [{}] has been saved"
 msgstr "Diagramm [{}] wurde gespeichert"
 
+#, python-brace-format
 msgid "Chart [{}] was added to dashboard [{}]"
 msgstr "Diagramm [{}] wurde dem Dashboard hinzugefügt [{}]"
 
@@ -3329,6 +3330,7 @@ msgstr "Visualisierungsobjekt konnte nicht gefunden werden"
 msgid "Could not load database driver"
 msgstr "Datenbanktreiber konnte nicht geladen werden"
 
+#, python-brace-format
 msgid "Could not load database driver: {}"
 msgstr "Datenbanktreiber konnte nicht geladen werden: {}"
 
@@ -3388,9 +3390,6 @@ msgstr ""
 
 msgid "Create a new chart"
 msgstr "Neues Diagramm erstellen"
-
-msgid "Create chart"
-msgstr "Diagramm erstellen"
 
 msgid "Create chart with dataset"
 msgstr "Diagramm mit Datensatz erstellen"
@@ -3613,6 +3612,7 @@ msgstr "Dashboard"
 msgid "Dashboard [%s] just got created and chart [%s] was added to it"
 msgstr "Dashboard [%s] wurde gerade erstellt und Diagramm [%s] hinzugefügt"
 
+#, python-brace-format
 msgid "Dashboard [{}] just got created and chart [{}] was added to it"
 msgstr "Dashboard [{}] wurde gerade erstellt und Diagramm [{}] wurde hinzugefügt"
 
@@ -3998,6 +3998,7 @@ msgstr "Standard-Schema"
 msgid "Default URL"
 msgstr "Datenbank URL"
 
+#, python-brace-format
 msgid ""
 "Default URL to redirect to when accessing from the dataset list page.\n"
 "            Accepts relative URLs such as <span style=„white-space: "
@@ -5301,6 +5302,7 @@ msgstr "Zusätzliche Parameter"
 msgid "Extra data for JS"
 msgstr "Zusätzliche Daten für JS"
 
+#, python-brace-format
 msgid ""
 "Extra data to specify table metadata. Currently supports metadata of the "
 "format: `{ \"certification\": { \"certified_by\": \"Data Platform Team\","
@@ -5381,7 +5383,7 @@ msgstr "Cross-Filter-Scoping konnte nicht gespeichert werden"
 msgid "Failed to start remote query on a worker."
 msgstr "Remoteabfrage für einen Worker konnte nicht gestartet werden."
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Failed to stop query."
 msgstr "Fehler beim Beenden der Abfrage. %s"
 
@@ -5694,6 +5696,7 @@ msgstr ""
 msgid "Format SQL"
 msgstr "SQL formatieren"
 
+#, python-brace-format
 msgid ""
 "Format data labels. Use variables: {name}, {value}, {percent}. \\n "
 "represents a new line. ECharts compatibility:\n"
@@ -10101,9 +10104,6 @@ msgstr "Alle Spalten anzeigen"
 msgid "Show axis line ticks"
 msgstr "Anzeigen von Achsenlinien-Ticks"
 
-msgid "Show cell bars"
-msgstr "Zellenbalken anzeigen"
-
 msgid "Show chart description"
 msgstr "Diagrammbeschreibung anzeigen"
 
@@ -10119,7 +10119,7 @@ msgstr "Datenpunkte als Kreismarkierungen auf den Linien darstellen"
 msgid "Show empty columns"
 msgstr "Leere Spalten anzeigen"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Show entries per page"
 msgstr "%s Einträge anzeigen"
 
@@ -11320,6 +11320,7 @@ msgstr ""
 "Die metadata_params im Feld Extra ist nicht ordnungsgemäß konfiguriert. "
 "Der Schlüssel %(key)s ist ungültig."
 
+#, python-brace-format
 msgid ""
 "The metadata_params in Extra field is not configured correctly. The key "
 "%{key}s is invalid."
@@ -11926,7 +11927,7 @@ msgstr "Beim Abrufen gespeicherter Diagramme ist leider ein Fehler aufgetreten"
 msgid "There was an error loading the tables"
 msgstr "Beim Laden der Tabellen ist ein Fehler aufgetreten"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "There was an error retrieving dashboard tabs."
 msgstr "Leider ist beim Speichern dieses Dashboards ein Fehler aufgetreten: %s"
 
@@ -12613,7 +12614,7 @@ msgstr "Insgesamt (%(aggfunc)s)"
 msgid "Total (%(aggregatorName)s)"
 msgstr "Insgesamt (%(aggregatorName)s)"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Total (Sum)"
 msgstr "Gesamt: %s"
 
@@ -14177,6 +14178,7 @@ msgstr ""
 "nachfolgende Aktionen nicht vollständig rückgängig machen. Sie können "
 "Ihren aktuellen Status speichern, um den Verlauf zurückzusetzen."
 
+#, python-brace-format
 msgid "You may have an error in your SQL statement. {message}"
 msgstr "Möglicherweise haben Sie einen Fehler in Ihrer SQL-Anweisung. {Meldung}"
 
@@ -14412,6 +14414,7 @@ msgstr "basis"
 msgid "below (example:"
 msgstr "unten (Beispiel:"
 
+#, python-brace-format
 msgid "between {down} and {up} {name}"
 msgstr "zwischen {down} und {up} {name}"
 
@@ -14764,6 +14767,7 @@ msgstr "neueste Partition:"
 msgid "left"
 msgstr "Links"
 
+#, python-brace-format
 msgid "less than {min} {name}"
 msgstr "weniger als {min} {name}"
 
@@ -14810,6 +14814,7 @@ msgstr "monoton"
 msgid "month"
 msgstr "Monat"
 
+#, python-brace-format
 msgid "more than {max} {name}"
 msgstr "mehr als {max} {name}"
 
@@ -15026,7 +15031,7 @@ msgstr "Symbol für unbekannten Typ"
 msgid "unset"
 msgstr "Juni"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "updated"
 msgstr "%s aktualisiert"
 
@@ -15093,3 +15098,4 @@ msgstr "Zoombereich"
 
 msgid "© Layer attribution"
 msgstr ""
+

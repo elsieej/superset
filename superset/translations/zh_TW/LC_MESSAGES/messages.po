@@ -22,11 +22,11 @@ msgstr ""
 "Last-Translator: Shao Yu-Lung <bestlong168@gmail.com>\n"
 "Language: zh_TW\n"
 "Language-Team: zh_TW <bestlong168@gmail.com>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 msgid ""
 "\n"
@@ -617,6 +617,7 @@ msgstr "已存在同名的資料庫。"
 msgid "A date is required when using custom date shift"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "A dictionary with column names and their data types if you need to change"
 " the defaults. Example: {\"user_id\":\"int\"}. Check Python's Pandas "
@@ -900,9 +901,6 @@ msgstr "為您的查詢寫一段描述"
 #, fuzzy
 msgid "Add extra connection information."
 msgstr "增加額外的連接訊息"
-
-msgid "Add filter"
-msgstr "增加過濾條件"
 
 msgid ""
 "Add filter clauses to control the filter's source query,\n"
@@ -1294,7 +1292,7 @@ msgstr "向資料庫傳递單個参數時必須指定引擎。"
 msgid "An error has occurred"
 msgstr "發生了一個錯誤"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "An error has occurred while syncing virtual dataset columns"
 msgstr "獲取數據集時出錯：%s"
 
@@ -2433,12 +2431,15 @@ msgstr "圖表 [%s] 已經保存"
 msgid "Chart [%s] was added to dashboard [%s]"
 msgstr "圖表 [%s] 已經增加到看板 [%s]"
 
+#, python-brace-format
 msgid "Chart [{}] has been overwritten"
 msgstr "圖表 [{}] 已經覆盖"
 
+#, python-brace-format
 msgid "Chart [{}] has been saved"
 msgstr "圖表 [{}] 已經保存"
 
+#, python-brace-format
 msgid "Chart [{}] was added to dashboard [{}]"
 msgstr "圖表 [{}] 已經增加到看板 [{}]"
 
@@ -3213,6 +3214,7 @@ msgstr "找不到可視化對象"
 msgid "Could not load database driver"
 msgstr "無法加载資料庫驱動程序"
 
+#, python-brace-format
 msgid "Could not load database driver: {}"
 msgstr "無法加载資料庫驅動程序：{}"
 
@@ -3273,10 +3275,6 @@ msgstr "創建一個數據集以開始將您的數據可視化為圖表，或者
 
 msgid "Create a new chart"
 msgstr "創建新圖表"
-
-#, fuzzy
-msgid "Create chart"
-msgstr "創建圖表"
 
 msgid "Create chart with dataset"
 msgstr ""
@@ -3513,6 +3511,7 @@ msgstr "看板"
 msgid "Dashboard [%s] just got created and chart [%s] was added to it"
 msgstr "看板 [%s] 刚刚被創建，並且圖表 [%s] 已被增加到其中"
 
+#, python-brace-format
 msgid "Dashboard [{}] just got created and chart [{}] was added to it"
 msgstr "看板 [{}] 刚刚被創建，並且圖表 [{}] 已被增加到其中"
 
@@ -3907,6 +3906,7 @@ msgstr "選擇方案"
 msgid "Default URL"
 msgstr "預設 URL"
 
+#, python-brace-format
 msgid ""
 "Default URL to redirect to when accessing from the dataset list page.\n"
 "            Accepts relative URLs such as <span style=„white-space: "
@@ -5162,6 +5162,7 @@ msgstr "額外参數"
 msgid "Extra data for JS"
 msgstr "給 JS 的額外數據"
 
+#, python-brace-format
 msgid ""
 "Extra data to specify table metadata. Currently supports metadata of the "
 "format: `{ \"certification\": { \"certified_by\": \"Data Platform Team\","
@@ -5242,7 +5243,7 @@ msgstr "保存交叉篩選作用域失敗"
 msgid "Failed to start remote query on a worker."
 msgstr "無法啟動遠程查詢"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Failed to stop query."
 msgstr "停止查詢失敗。 %s"
 
@@ -5544,6 +5545,7 @@ msgstr ""
 msgid "Format SQL"
 msgstr "格式化 SQL"
 
+#, python-brace-format
 msgid ""
 "Format data labels. Use variables: {name}, {value}, {percent}. \\n "
 "represents a new line. ECharts compatibility:\n"
@@ -9980,9 +9982,6 @@ msgstr "顯示所有列"
 msgid "Show axis line ticks"
 msgstr "顯示軸線刻度"
 
-msgid "Show cell bars"
-msgstr "顯示單元格的柱"
-
 #, fuzzy
 msgid "Show chart description"
 msgstr "顯示圖表說明"
@@ -10001,7 +10000,7 @@ msgstr "將數據點顯示為線條上的圆形標記"
 msgid "Show empty columns"
 msgstr "顯示空列"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Show entries per page"
 msgstr "顯示指標"
 
@@ -11130,6 +11129,7 @@ msgid ""
 "%(key)s is invalid."
 msgstr "額外欄位中的元數據参數配置不正確。鍵 %(key)s 無效。"
 
+#, python-brace-format
 msgid ""
 "The metadata_params in Extra field is not configured correctly. The key "
 "%{key}s is invalid."
@@ -11631,7 +11631,7 @@ msgstr "抱歉，這個看板在獲取圖表時發生錯誤："
 msgid "There was an error loading the tables"
 msgstr "您的請求有錯誤"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "There was an error retrieving dashboard tabs."
 msgstr "抱歉，這個看板在保存時發生錯誤：%s"
 
@@ -12233,7 +12233,7 @@ msgstr ""
 msgid "Total (%(aggregatorName)s)"
 msgstr ""
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Total (Sum)"
 msgstr "總計: %s"
 
@@ -13674,6 +13674,7 @@ msgid ""
 "the history."
 msgstr ""
 
+#, python-brace-format
 msgid "You may have an error in your SQL statement. {message}"
 msgstr ""
 
@@ -13894,6 +13895,7 @@ msgstr "基礎"
 msgid "below (example:"
 msgstr "格式，比如："
 
+#, python-brace-format
 msgid "between {down} and {up} {name}"
 msgstr ""
 
@@ -14251,9 +14253,7 @@ msgid ""
 "is linked to %s charts that appear on %s dashboards and users have %s SQL"
 " Lab tabs using this database open. Are you sure you want to continue? "
 "Deleting the database will break those objects."
-msgstr ""
-"已經關聯了 %s 圖表和 %s 看板，並且用戶在該資料庫上打開了 %s 個 SQL "
-"編輯器選項卡。確定要繼續嗎？删除資料庫將破壞這些對象。"
+msgstr "已經關聯了 %s 圖表和 %s 看板，並且用戶在該資料庫上打開了 %s 個 SQL 編輯器選項卡。確定要繼續嗎？删除資料庫將破壞這些對象。"
 
 #, fuzzy, python-format
 msgid ""
@@ -14279,6 +14279,7 @@ msgstr "最新分區："
 msgid "left"
 msgstr "左"
 
+#, python-brace-format
 msgid "less than {min} {name}"
 msgstr ""
 
@@ -14330,6 +14331,7 @@ msgstr "單調性"
 msgid "month"
 msgstr "月"
 
+#, python-brace-format
 msgid "more than {max} {name}"
 msgstr ""
 
@@ -14570,7 +14572,7 @@ msgstr "未知類型圖標"
 msgid "unset"
 msgstr "六月"
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "updated"
 msgstr "上次更新 %s"
 
@@ -14643,3 +14645,4 @@ msgstr "縮放面積"
 
 msgid "© Layer attribution"
 msgstr ""
+

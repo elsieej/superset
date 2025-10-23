@@ -22,11 +22,11 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 msgid ""
 "\n"
@@ -581,6 +581,7 @@ msgstr ""
 msgid "A date is required when using custom date shift"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "A dictionary with column names and their data types if you need to change"
 " the defaults. Example: {\"user_id\":\"int\"}. Check Python's Pandas "
@@ -840,9 +841,6 @@ msgstr ""
 msgid "Add extra connection information."
 msgstr ""
 
-msgid "Add filter"
-msgstr ""
-
 msgid ""
 "Add filter clauses to control the filter's source query,\n"
 "                    though only in the context of the autocomplete i.e., "
@@ -984,7 +982,7 @@ msgstr ""
 msgid "Affected Charts"
 msgstr ""
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Affected Dashboards"
 msgstr ""
 
@@ -2262,12 +2260,15 @@ msgstr ""
 msgid "Chart [%s] was added to dashboard [%s]"
 msgstr ""
 
+#, python-brace-format
 msgid "Chart [{}] has been overwritten"
 msgstr ""
 
+#, python-brace-format
 msgid "Chart [{}] has been saved"
 msgstr ""
 
+#, python-brace-format
 msgid "Chart [{}] was added to dashboard [{}]"
 msgstr ""
 
@@ -2977,6 +2978,7 @@ msgstr ""
 msgid "Could not load database driver"
 msgstr ""
 
+#, python-brace-format
 msgid "Could not load database driver: {}"
 msgstr ""
 
@@ -3033,9 +3035,6 @@ msgid ""
 msgstr ""
 
 msgid "Create a new chart"
-msgstr ""
-
-msgid "Create chart"
 msgstr ""
 
 msgid "Create chart with dataset"
@@ -3249,6 +3248,7 @@ msgstr ""
 msgid "Dashboard [%s] just got created and chart [%s] was added to it"
 msgstr ""
 
+#, python-brace-format
 msgid "Dashboard [{}] just got created and chart [{}] was added to it"
 msgstr ""
 
@@ -3610,6 +3610,7 @@ msgstr ""
 msgid "Default URL"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "Default URL to redirect to when accessing from the dataset list page.\n"
 "            Accepts relative URLs such as <span style=„white-space: "
@@ -4779,6 +4780,7 @@ msgstr ""
 msgid "Extra data for JS"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "Extra data to specify table metadata. Currently supports metadata of the "
 "format: `{ \"certification\": { \"certified_by\": \"Data Platform Team\","
@@ -5127,6 +5129,7 @@ msgstr ""
 msgid "Format SQL"
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "Format data labels. Use variables: {name}, {value}, {percent}. \\n "
 "represents a new line. ECharts compatibility:\n"
@@ -6230,7 +6233,7 @@ msgstr ""
 msgid "Map"
 msgstr ""
 
-#, fuzzy, python-format
+#, fuzzy
 msgid "Map Options"
 msgstr ""
 
@@ -9197,9 +9200,6 @@ msgstr ""
 msgid "Show axis line ticks"
 msgstr ""
 
-msgid "Show cell bars"
-msgstr ""
-
 msgid "Show chart description"
 msgstr ""
 
@@ -10259,6 +10259,7 @@ msgid ""
 "%(key)s is invalid."
 msgstr ""
 
+#, python-brace-format
 msgid ""
 "The metadata_params in Extra field is not configured correctly. The key "
 "%{key}s is invalid."
@@ -12643,6 +12644,7 @@ msgid ""
 "the history."
 msgstr ""
 
+#, python-brace-format
 msgid "You may have an error in your SQL statement. {message}"
 msgstr ""
 
@@ -12849,6 +12851,7 @@ msgstr ""
 msgid "below (example:"
 msgstr ""
 
+#, python-brace-format
 msgid "between {down} and {up} {name}"
 msgstr ""
 
@@ -13190,6 +13193,7 @@ msgstr ""
 msgid "left"
 msgstr ""
 
+#, python-brace-format
 msgid "less than {min} {name}"
 msgstr ""
 
@@ -13234,6 +13238,7 @@ msgstr ""
 msgid "month"
 msgstr ""
 
+#, python-brace-format
 msgid "more than {max} {name}"
 msgstr ""
 
@@ -13505,3 +13510,4 @@ msgstr ""
 
 msgid "© Layer attribution"
 msgstr ""
+

@@ -17,16 +17,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-06-30 15:30+0900\n"
+"POT-Creation-Date: 2025-04-29 12:34+0330\n"
 "PO-Revision-Date: 2024-05-14 13:30+0900\n"
 "Last-Translator: Yuri Umezaki <bungoume@gmail.com>\n"
 "Language: ja\n"
 "Language-Team: ja <LL@li.org>\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.17.0\n"
 
 msgid ""
 "\n"
@@ -613,7 +613,7 @@ msgstr "同じ名前のデータベースがすでに存在します。"
 msgid "A date is required when using custom date shift"
 msgstr ""
 
-#, fuzzy
+#, fuzzy, python-brace-format
 msgid ""
 "A dictionary with column names and their data types if you need to change"
 " the defaults. Example: {\"user_id\":\"int\"}. Check Python's Pandas "
@@ -874,9 +874,6 @@ msgstr "タグの説明を追加する"
 
 msgid "Add extra connection information."
 msgstr "追加の接続情報を追加します"
-
-msgid "Add filter"
-msgstr "フィルタを追加"
 
 msgid ""
 "Add filter clauses to control the filter's source query,\n"
@@ -1253,7 +1250,6 @@ msgstr "データベースに個々のパラメータを渡すときは、エン
 msgid "An error has occurred"
 msgstr "エラーが発生しました。"
 
-#, python-format
 msgid "An error has occurred while syncing virtual dataset columns"
 msgstr "仮想データセット列の同期中にエラーが発生しました。: %s"
 
@@ -2323,12 +2319,15 @@ msgstr "チャート [%s] が保存されました"
 msgid "Chart [%s] was added to dashboard [%s]"
 msgstr "チャート [%s] がダッシュボード [%s] に追加されました"
 
+#, python-brace-format
 msgid "Chart [{}] has been overwritten"
 msgstr "チャート [{}] が上書きされました。"
 
+#, python-brace-format
 msgid "Chart [{}] has been saved"
 msgstr "チャート [{}] が保存されました。"
 
+#, python-brace-format
 msgid "Chart [{}] was added to dashboard [{}]"
 msgstr "チャート [{}] はダッシュボード [{}] に追加されました。"
 
@@ -3047,6 +3046,7 @@ msgstr "viz オブジェクトが見つかりませんでした。"
 msgid "Could not load database driver"
 msgstr "データベースドライバーをロードできませんでした。"
 
+#, python-brace-format
 msgid "Could not load database driver: {}"
 msgstr "データベース ドライバーを読み込めませんでした。: {}"
 
@@ -3105,9 +3105,6 @@ msgstr ""
 
 msgid "Create a new chart"
 msgstr "新しいチャートを作成"
-
-msgid "Create chart"
-msgstr "チャートを作成"
 
 msgid "Create chart with dataset"
 msgstr "データセットを使用してチャートを作成する"
@@ -3320,6 +3317,7 @@ msgstr "ダッシュボード"
 msgid "Dashboard [%s] just got created and chart [%s] was added to it"
 msgstr "ダッシュボード [%s] が作成され、チャート [%s] が追加されました"
 
+#, python-brace-format
 msgid "Dashboard [{}] just got created and chart [{}] was added to it"
 msgstr "ダッシュボード [{}] が作成されチャート [{}] が追加されました。"
 
@@ -3685,6 +3683,7 @@ msgstr "デフォルトのスキーマ"
 msgid "Default URL"
 msgstr "デフォルトのURL"
 
+#, python-brace-format
 msgid ""
 "Default URL to redirect to when accessing from the dataset list page.\n"
 "            Accepts relative URLs such as <span style=„white-space: "
@@ -4077,9 +4076,8 @@ msgid ""
 " Graph charts can be configured to be force-directed or circulate. If "
 "your data has a geospatial component, try the deck.gl Arc chart."
 msgstr ""
-"グラフ構造内のエンティティ間の接続を表示します。関係をマッピングし、ネットワーク内でどのノードが重要であるかを示すのに役立ちます。"
-"チャートは、力を指定したり循環したりするように構成できます。データに地理空間コンポーネントが含まれている場合は、deck.gl "
-"円弧チャートを試してください。"
+"グラフ構造内のエンティティ間の接続を表示します。関係をマッピングし、ネットワーク内でどのノードが重要であるかを示すのに役立ちます。チャートは、力を指定したり循環したりするように構成できます。データに地理空間コンポーネントが含まれている場合は、deck.gl"
+" 円弧チャートを試してください。"
 
 msgid "Distribute across"
 msgstr "全体に分散"
@@ -4422,8 +4420,9 @@ msgstr "標高"
 msgid "Email"
 msgstr "電子メール"
 
-msgid "電子メールが必要です"
-msgstr ""
+#, fuzzy
+msgid "Email is required"
+msgstr "値が要求されます"
 
 msgid "Email reports active"
 msgstr "電子メールレポートが有効です"
@@ -4855,6 +4854,7 @@ msgstr "追加パラメータ"
 msgid "Extra data for JS"
 msgstr "JSの追加データ"
 
+#, python-brace-format
 msgid ""
 "Extra data to specify table metadata. Currently supports metadata of the "
 "format: `{ \"certification\": { \"certified_by\": \"Data Platform Team\","
@@ -5211,6 +5211,7 @@ msgstr "フォーム データがキャッシュ内に見つからないため�
 msgid "Format SQL"
 msgstr "SQLのフォーマット"
 
+#, python-brace-format
 msgid ""
 "Format data labels. Use variables: {name}, {value}, {percent}. \\n "
 "represents a new line. ECharts compatibility:\n"
@@ -9335,9 +9336,6 @@ msgstr "すべての列を表示"
 msgid "Show axis line ticks"
 msgstr "軸線目盛りを表示"
 
-msgid "Show cell bars"
-msgstr "セルバーを表示"
-
 msgid "Show chart description"
 msgstr "チャートの説明を表示"
 
@@ -10424,6 +10422,7 @@ msgid ""
 "%(key)s is invalid."
 msgstr "Extra フィールドのmetadata_params が正しく構成されていません。キー %(key)s が無効です。"
 
+#, python-brace-format
 msgid ""
 "The metadata_params in Extra field is not configured correctly. The key "
 "%{key}s is invalid."
@@ -11176,7 +11175,9 @@ msgstr ""
 msgid ""
 "This field is used as a unique identifier to attach the calculated "
 "dimension to charts. It is also used as the alias in the SQL query."
-msgstr "このフィールドは、計算されたディメンションをチャートに添付するための一意の識別子として使用されます。 SQL クエリのエイリアスとしても使用されます。"
+msgstr ""
+"このフィールドは、計算されたディメンションをチャートに添付するための一意の識別子として使用されます。 SQL "
+"クエリのエイリアスとしても使用されます。"
 
 msgid ""
 "This field is used as a unique identifier to attach the metric to charts."
@@ -12509,7 +12510,7 @@ msgid "Whether to display the trend line"
 msgstr "トレンドラインを表示するかどうか"
 
 msgid "Whether to display the type icon (#, Δ, %)"
-msgstr タイプアイコン(#, Δ, %)を表示するかどうか"
+msgstr "イプアイコン(#, Δ, %)を表示するかどうか"
 
 msgid "Whether to enable changing graph position and scaling."
 msgstr "グラフの位置とスケーリングの変更を有効にするかどうか。"
@@ -12903,6 +12904,7 @@ msgid ""
 "the history."
 msgstr "%(historyLength)s 個の元に戻すスロットをすべて使用しました。後続のアクションを完全に元に戻すことはできません。"
 
+#, python-brace-format
 msgid "You may have an error in your SQL statement. {message}"
 msgstr "SQL ステートメントにエラーがある可能性があります。 {message}"
 
@@ -13112,6 +13114,7 @@ msgstr "基礎"
 msgid "below (example:"
 msgstr "以下(例:"
 
+#, python-brace-format
 msgid "between {down} and {up} {name}"
 msgstr "{ダウン} と {アップ} {名前}の間"
 
@@ -13431,8 +13434,8 @@ msgid ""
 " Lab tabs using this database open. Are you sure you want to continue? "
 "Deleting the database will break those objects."
 msgstr ""
-"データベース %s は、%s ダッシュボードに表示される %s チャートにリンクされており、ユーザーはこのデータベースを使用する %s SQL ラボ"
-" タブを開いています。続行してもよろしいですか?データベースを削除すると、それらのオブジェクトが壊れます。"
+"データベース %s は、%s ダッシュボードに表示される %s チャートにリンクされており、ユーザーはこのデータベースを使用する %s SQL "
+"ラボ タブを開いています。続行してもよろしいですか?データベースを削除すると、それらのオブジェクトが壊れます。"
 
 #, fuzzy, python-format
 msgid ""
@@ -13460,6 +13463,7 @@ msgstr "最新のパーティション:"
 msgid "left"
 msgstr "左"
 
+#, python-brace-format
 msgid "less than {min} {name}"
 msgstr "{分} {名前} 未満"
 
@@ -13504,6 +13508,7 @@ msgstr "単調"
 msgid "month"
 msgstr "月"
 
+#, python-brace-format
 msgid "more than {max} {name}"
 msgstr "{max} {name} を超えています"
 
@@ -13713,7 +13718,6 @@ msgstr "不明なタイプのアイコン"
 msgid "unset"
 msgstr "未設定"
 
-#, python-format
 msgid "updated"
 msgstr "%s が更新されました"
 
@@ -13779,3 +13783,7 @@ msgstr "ズームエリア"
 
 msgid "© Layer attribution"
 msgstr ""
+
+#~ msgid "電子メールが必要です"
+#~ msgstr ""
+
