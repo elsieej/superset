@@ -34,6 +34,8 @@ import {
   MenuData,
 } from 'src/types/bootstrapTypes';
 import RightMenu from './RightMenu';
+import { t } from '@superset-ui/core';
+
 
 interface MenuProps {
   data: MenuData;
@@ -188,13 +190,13 @@ export function Menu({
     const path = location.pathname;
     switch (true) {
       case path.startsWith(Paths.Dashboard):
-        setActiveTabs(['Dashboards']);
+        setActiveTabs([t('Dashboards')]);
         break;
       case path.startsWith(Paths.Chart) || path.startsWith(Paths.Explore):
-        setActiveTabs(['Charts']);
+        setActiveTabs([t('Charts')]);
         break;
       case path.startsWith(Paths.Datasets):
-        setActiveTabs(['Datasets']);
+        setActiveTabs([t('Datasets')]);
         break;
       default:
         setActiveTabs(defaultTabSelection);
@@ -245,18 +247,18 @@ export function Menu({
           }
           if (typeof child !== 'string') {
             return (
-              <MainNav.Item key={`${child.label}`}>
+              <MainNav.Item key={`${t(child.label)}`}>
                 {child.isFrontendRoute ? (
                   <NavLink
                     to={child.url || ''}
                     exact
                     activeClassName="is-active"
                   >
-                    {child.label}
+                    {t(child.label)}
                   </NavLink>
                 ) : (
                   <Typography.Link href={child.url}>
-                    {child.label}
+                    {t(child.label)}
                   </Typography.Link>
                 )}
               </MainNav.Item>
@@ -341,6 +343,7 @@ export function Menu({
               const props = {
                 index,
                 ...item,
+                label: t(item.label),
                 isFrontendRoute: isFrontendRoute(item.url),
                 childs: item.childs?.map(c => {
                   if (typeof c === 'string') {
@@ -395,15 +398,16 @@ export default function MenuWrapper({ data, ...rest }: MenuProps) {
     const children: (MenuObjectProps | string)[] = [];
     const newItem = {
       ...item,
+      label: t(item.label),
     };
 
     // Filter childs
     if (item.childs) {
       item.childs.forEach((child: MenuObjectChildProps | string) => {
         if (typeof child === 'string') {
-          children.push(child);
+          children.push(t(child));
         } else if ((child as MenuObjectChildProps).label) {
-          children.push(child);
+          children.push({ ...child, label: t(child.label) });
         }
       });
 

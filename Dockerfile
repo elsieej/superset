@@ -21,10 +21,11 @@
 ARG PY_VER=3.11.13-slim-trixie
 
 # If BUILDPLATFORM is null, set it to 'amd64' (or leave as is otherwise).
-ARG BUILDPLATFORM=${BUILDPLATFORM:-amd64}
+ARG TARGET_BUILDPLATFORM=${BUILDPLATFORM:-amd64}
 
 # Include translations in the final build
-ARG BUILD_TRANSLATIONS="false"
+ARG BUILD_TRANSLATIONS="true"
+# "false"
 
 # Build arg to pre-populate examples DuckDB file
 ARG LOAD_EXAMPLES_DUCKDB="false"
@@ -32,7 +33,7 @@ ARG LOAD_EXAMPLES_DUCKDB="false"
 ######################################################################
 # superset-node-ci used as a base for building frontend assets and CI
 ######################################################################
-FROM --platform=${BUILDPLATFORM} node:20-trixie-slim AS superset-node-ci
+FROM --platform=${TARGET_BUILDPLATFORM} node:20-trixie-slim AS superset-node-ci
 ARG BUILD_TRANSLATIONS
 ENV BUILD_TRANSLATIONS=${BUILD_TRANSLATIONS}
 ARG DEV_MODE="false"           # Skip frontend build in dev mode

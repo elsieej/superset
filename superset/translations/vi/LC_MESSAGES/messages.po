@@ -6597,6 +6597,9 @@ msgstr "Mã hóa (Encoding) đường (Lines)"
 msgid "Link Copied!"
 msgstr "Đã sao chép liên kết!"
 
+msgid "List Groups"
+msgstr "Danh sách Nhóm quyền"
+
 msgid "List Roles"
 msgstr "Danh sách Vai trò"
 
