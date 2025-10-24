@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'SVN-Helvetica Neue';
+  src: url('../fonts/SVN-Helvetica-Neue-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Helvetica Neue';
+  src: url('../fonts/SVN-Helvetica-Neue-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Helvetica Neue';
+  src: url('../fonts/SVN-Helvetica-Neue-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

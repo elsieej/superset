@@ -770,7 +770,7 @@ THEME_DEFAULT: Theme = {
         "colorSuccess": "#5ac189",
         "colorInfo": "#66bcfe",
         # Fonts
-        "fontFamily": "Inter, Helvetica, Arial",
+        "fontFamily": "'SVN-Helvetica Neue', Inter, Helvetica, Arial",
         "fontFamilyCode": "'Fira Code', 'Courier New', monospace",
         # Extra tokens
         "transitionTiming": 0.3,
