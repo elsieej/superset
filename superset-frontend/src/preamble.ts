@@ -44,7 +44,6 @@ import 'dayjs/plugin/duration';
 import 'dayjs/plugin/updateLocale';
 import 'dayjs/plugin/localizedFormat';
 import 'dayjs/plugin/isSameOrBefore';
-import './assets/styles/custom-fonts.css';
 
 configure();
 

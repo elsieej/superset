@@ -134,6 +134,7 @@ function Echart(
   ref: Ref<EchartsHandler>,
 ) {
   const theme = useTheme();
+  // END DEBUG BLOCK
   const divRef = useRef<HTMLDivElement>(null);
   if (refs) {
     // eslint-disable-next-line no-param-reassign

@@ -781,6 +781,20 @@ THEME_DEFAULT: Theme = {
         "fontWeightLight": "300",
         "fontWeightStrong": "500",
     },
+    "echartsOptionsOverridesByChartType": {
+        "echarts_timeseries_line": {
+            "yAxis": [{
+                "type": "value",
+                "splitLine": {
+                    "lineStyle": {
+                        "color": '#cccccc',
+                        "width": 0.5,
+                        "type": "solid"
+                    }
+                }
+            }]
+        }
+    },
     "algorithm": "default",
 }
 
@@ -788,8 +802,58 @@ THEME_DEFAULT: Theme = {
 # Inherits all tokens from THEME_DEFAULT and adds dark algorithm
 # Set to None to disable dark mode
 THEME_DARK: Optional[Theme] = {
-    **THEME_DEFAULT,
-    "algorithm": "dark",
+    #**THEME_DEFAULT,
+    "token": {
+        # Brand
+        "brandLogoAlt": "Apache Superset",
+        "brandLogoUrl": APP_ICON,
+        "brandLogoMargin": "18px",
+        "brandLogoHref": "/",
+        "brandLogoHeight": "24px",
+        # Spinner
+        "brandSpinnerUrl": None,
+        "brandSpinnerSvg": None,
+        # Default colors
+        "colorError": "#ff4245",
+        "colorWarning": "#ff9230",
+        "colorSuccess": "#30d158",
+        "colorLink": "#0091ff",
+        "colorBgSpotlight": "#041a48",
+        "colorBgElevated": "#041a48cc",
+        "colorBgContainer": "#050e39",
+        "colorPrimary": "#009fff",
+        "colorInfo": "#009fff",
+        "colorBgBase": "#030630",
+        "colorBorder": "#dadada",
+        "colorBorderSecondary": "#f4f4f4",
+        "colorBgLayout": "#020531",
+         # Fonts
+        "fontFamily": "'SVN-Helvetica Neue', Inter, Helvetica, Arial",
+        "fontFamilyCode": "'Fira Code', 'Courier New', monospace",
+        # Extra tokens
+        "transitionTiming": 0.3,
+        "brandIconMaxWidth": 37,
+        "fontSizeXS": "8",
+        "fontSizeXXL": "28",
+        "fontWeightNormal": "400",
+        "fontWeightLight": "300",
+        "fontWeightStrong": "500",
+    },
+    "echartsOptionsOverridesByChartType": {
+        "echarts_timeseries_line": {
+            "yAxis": [{
+                "type": "value",
+                "splitLine": {
+                    "lineStyle": {
+                        "color": '#f4f4f4',
+                        "width": 0.5,
+                        "type": "solid"
+                    }
+                }
+            }]
+        }
+    },
+    "algorithm": "dark"
 }
 
 # Theme behavior and user preference settings
@@ -799,7 +863,7 @@ THEME_DARK: Optional[Theme] = {
 # - OS preference detection is automatically enabled
 #
 # Enable UI-based theme administration for admins
-ENABLE_UI_THEME_ADMINISTRATION = True  # Allows admins to set system themes via UI
+ENABLE_UI_THEME_ADMINISTRATION = False  # Allows admins to set system themes via UI
 
 # Custom font configuration
 # Load external fonts at runtime without rebuilding the application
@@ -808,7 +872,9 @@ ENABLE_UI_THEME_ADMINISTRATION = True  # Allows admins to set system themes via 
 #     "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap",
 #     "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap",
 # ]
-CUSTOM_FONT_URLS: list[str] = []
+CUSTOM_FONT_URLS: list[str] = [
+    "/static/assets/styles/custom-fonts.css"
+]
 
 # ---------------------------------------------------
 # EXTRA_SEQUENTIAL_COLOR_SCHEMES is used for adding custom sequential color schemes

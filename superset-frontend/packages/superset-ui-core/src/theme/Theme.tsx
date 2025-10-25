@@ -106,6 +106,11 @@ export class Theme {
     this.theme = {
       ...tokens, // First apply Ant Design computed tokens
       ...(antdConfig.token || {}), // Then override with our custom tokens
+      // Preserve custom fields like echartsOptionsOverridesByChartType and echartsOptionsOverrides
+      // @ts-ignore
+      echartsOptionsOverrides: antdConfig.echartsOptionsOverrides || {},
+      // @ts-ignore
+      echartsOptionsOverridesByChartType: antdConfig.echartsOptionsOverridesByChartType || {},
     } as SupersetTheme;
 
     // Update the providers with the fully formed theme

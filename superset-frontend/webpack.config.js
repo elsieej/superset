@@ -135,8 +135,17 @@ const plugins = [
     'process.env.SCARF_ANALYTICS': JSON.stringify(process.env.SCARF_ANALYTICS),
   }),
 
+  // copy custom fonts and styles to the build directory
   new CopyPlugin({
-    patterns: ['package.json', { from: 'src/assets/images', to: 'images' }],
+    patterns: [
+      'package.json',
+      { from: 'src/assets/images', to: 'images' },
+      {
+        from: 'src/assets/styles/custom-fonts.css',
+        to: 'styles/custom-fonts.css',
+      },
+      { from: 'src/assets/fonts', to: 'fonts' },
+    ],
   }),
 
   // static pages
