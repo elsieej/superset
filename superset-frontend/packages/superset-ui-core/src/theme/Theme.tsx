@@ -108,9 +108,9 @@ export class Theme {
       ...(antdConfig.token || {}), // Then override with our custom tokens
       // Preserve custom fields like echartsOptionsOverridesByChartType and echartsOptionsOverrides
       // @ts-ignore
-      echartsOptionsOverrides: antdConfig.echartsOptionsOverrides || {},
+      echartsOptionsOverrides: antdConfig?.echartsOptionsOverrides || {},
       // @ts-ignore
-      echartsOptionsOverridesByChartType: antdConfig.echartsOptionsOverridesByChartType || {},
+      echartsOptionsOverridesByChartType: antdConfig?.echartsOptionsOverridesByChartType || {},
     } as SupersetTheme;
 
     // Update the providers with the fully formed theme

@@ -725,8 +725,20 @@ COMMON_BOOTSTRAP_OVERRIDES_FUNC: Callable[  # noqa: E731
 #          '#552288', '#5AAA46', '#CC7788', '#EEDD55', '#9977BB', '#BBAA44', '#DDCCDD']
 #     }]
 
+
 # This is merely a default
-EXTRA_CATEGORICAL_COLOR_SCHEMES: list[dict[str, Any]] = []
+EXTRA_CATEGORICAL_COLOR_SCHEMES: list[dict[str, Any]] = [
+    {
+        "id": 'elsie_color_scheme',
+        "description": '',
+        "label": 'Elsie Color Scheme',
+        "isDefault": False,
+        "colors": [
+            '#4dc0d4', '#00ff87', '#009fff', '#e707fa', '#ff0f7b', '#ff930f', '#40c8e0',
+            '#ffd60a', '#5e5ce6', '#e54d2e', '#00ffde', '#ffb6d9', '#982176', '#9c19e0'
+        ]
+    }
+]
 
 # -----------------------------------------------------------------------------
 # Theme System Configuration
@@ -751,6 +763,48 @@ EXTRA_CATEGORICAL_COLOR_SCHEMES: list[dict[str, Any]] = []
 
 # Default theme configuration - foundation for all themes
 # This acts as the base theme for all users
+ECHARTS_OPTIONS_OVERRIDES: dict[str, Any] = {
+    "echartsOptionsOverridesByChartType": {
+        "echarts_timeseries_line": {
+            "xAxis": {
+                "axisLine": {
+                    "lineStyle": {
+                        "color": '#f4f4f4cc',
+                        "width": 0.5,
+                        "type": "solid"
+                    }
+                },
+                "axisTick": {
+                    "show": False
+                },
+                "axisLabel": {
+                    "fontFamily": "'SVN-Helvetica Neue', Inter, Helvetica, Arial",
+                    "color": '#8e8e93',
+                }
+            },
+            "yAxis": {
+                "axisLine": {
+                    "lineStyle": {
+                        "color": '#f4f4f4cc',
+                        "width": 0.5,
+                        "type": "solid"
+                    }
+                },
+                "axisTick": {
+                    "show": False
+                },
+                "splitLine": {
+                    "show": False
+                },
+                "axisLabel": {
+                    "fontFamily": "'SVN-Helvetica Neue', Inter, Helvetica, Arial",
+                    "color": '#8e8e93',
+                }
+            }
+        }
+    }
+}
+
 THEME_DEFAULT: Theme = {
     "token": {
         # Brand
@@ -781,20 +835,7 @@ THEME_DEFAULT: Theme = {
         "fontWeightLight": "300",
         "fontWeightStrong": "500",
     },
-    "echartsOptionsOverridesByChartType": {
-        "echarts_timeseries_line": {
-            "yAxis": [{
-                "type": "value",
-                "splitLine": {
-                    "lineStyle": {
-                        "color": '#cccccc',
-                        "width": 0.5,
-                        "type": "solid"
-                    }
-                }
-            }]
-        }
-    },
+    **ECHARTS_OPTIONS_OVERRIDES,
     "algorithm": "default",
 }
 
@@ -839,20 +880,7 @@ THEME_DARK: Optional[Theme] = {
         "fontWeightLight": "300",
         "fontWeightStrong": "500",
     },
-    "echartsOptionsOverridesByChartType": {
-        "echarts_timeseries_line": {
-            "yAxis": [{
-                "type": "value",
-                "splitLine": {
-                    "lineStyle": {
-                        "color": '#f4f4f4',
-                        "width": 0.5,
-                        "type": "solid"
-                    }
-                }
-            }]
-        }
-    },
+    **ECHARTS_OPTIONS_OVERRIDES,
     "algorithm": "dark"
 }
 
@@ -863,7 +891,7 @@ THEME_DARK: Optional[Theme] = {
 # - OS preference detection is automatically enabled
 #
 # Enable UI-based theme administration for admins
-ENABLE_UI_THEME_ADMINISTRATION = False  # Allows admins to set system themes via UI
+ENABLE_UI_THEME_ADMINISTRATION = True  # Allows admins to set system themes via UI
 
 # Custom font configuration
 # Load external fonts at runtime without rebuilding the application
